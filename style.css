@@ -1,6 +1,6 @@
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,subtitulo,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,Cabecera,hgroup,menu,nav,output,ruby,seccion,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, Cabecera, hgroup, menu, nav, seccion {display: block;}
+article, aside, details, figcaption, figure,footer, Cabecera, hgroup, menu, nav, seccion, lista_factura{display: block;}
 
 ol,ul{list-style:none;margin:0;padding:0;}
 
@@ -9,37 +9,45 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 
 table{border-collapse:collapse;border-spacing:0;}
-/* start editing from here */
+
 
 a{text-decoration:none;}
 
-.txt-rt{text-align:right;}/* text align right */
+.txt-rt{text-align:right;}
 
-.txt-lt{text-align:left;}/* text align left */
+.txt-lt{text-align:left;}
 
-.txt-center{text-align:center;}/* text align center */
+.txt-center{text-align:center;}
 
-.float-rt{float:right;}/* float right */
+.float-rt{float:right;}
 
-.float-lt{float:left;}/* float left */
+.float-lt{float:left;}
 
-.limpiar{clear:both;}/* clear float */
+.limpiar{clear:both;}
 
-.pos-relative{position:relative;}/* Position Relative */
+.pos-relative{position:relative;}
 
-.pos-absolute{position:absolute;}/* Position Absolute */
+.pos-absolute{position:absolute;}
 
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-base{	vertical-align:baseline;}
 
-.vertical-top{	vertical-align:top;}/* vertical align top */
+.vertical-top{	vertical-align:top;}
 
-.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}
 
-nav.vertical ul li{	display:block;}/* vertical menu */
+nav.vertical ul li{	display:block;}
 
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+nav.horizontal ul li{	display: inline-block;}
 
 img{max-width:100%;}
+
+label{
+	display: inline-block;
+	width: 80px;
+	color: #fff;
+	text-align: left;
+	font-size: 0.8125em;
+}
 
 body{
 	font-family:Arial, Helvetica, sans-serif;
@@ -48,6 +56,11 @@ body{
 strong {
 	font-weight: 700;	
 }
+
+h3 a{
+	color: #FFF;
+} 
+
 .envolver{
 	width:80%;
 	margin:0 auto;
@@ -72,12 +85,30 @@ strong {
 	text-align:center;
 	padding:0.1% 0 0.2%;
 }
+.cssfactura{
+	text-align:center;
+	padding:0.1% 0 0.2%;
+}
 .cssmenu > ul > li {
 	display: inline-block;
 	position: relative;
 }
+.cssfactura > ul > li {
+	display: inline-block;
+	position: relative;
+	
+}
 .cssmenu > ul > li.active a, .cssmenu > ul > li a:hover {
 	color: #000;
+	background:#645394;
+}
+#boton{
+width:100px;
+height:40px;
+}
+
+.cssfactura > ul > li.active a, .cssfactura > ul > li a:hover {
+	color: black;
 	background:#645394;
 }
 .cssmenu > ul > li > a {
@@ -88,6 +119,26 @@ strong {
 	line-height: 4.8em;
 	padding: 10px 32px;
 	letter-spacing: 1px;
+}
+
+.cssfactura > ul > li > a {
+	text-transform: uppercase;
+	font: normal 15px/30px PT Sans, sans-serif;		
+	background: #645394;
+	color: #FFF;
+	display: block ;
+	line-height: 4.8em;
+	padding: 10px 32px;
+	letter-spacing: 1px;
+	
+}
+.envolver_boton_factura{
+	width:15%;
+	margin:0 auto;
+	-moz-transition:all .2s linear;
+	-webkit-transition:all .2s linear; 
+	-o-transition:all .2s linear; 
+	-ms-transition:all .2s linear;
 }
 .Cabecera{
 	background:#645394;
@@ -169,13 +220,21 @@ hr {
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
+	}
+	.menu_factura {
+	width:15%;
 	}	
+	
 }
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
  @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.envolver{
 		width:95%;
 	}
+	.menu_factura {
+	width:15%;
+	}
+	
 	.col_1_of_5{ 
 		margin: 1% 0 1% 0%;
 	}
@@ -190,7 +249,10 @@ hr {
 	.envolver{
 		width:95%;
 	}
-	.col_1_of_5{ 
+	.menu_factura {
+	width:15%;
+	}
+	col_1_of_5{ 
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_5 {
@@ -210,8 +272,31 @@ hr {
 .col_1_of_4{
 	display: block;
 	float: left;
-	margin: 1% 0 1% 2.6%;
+	margin: 1% 0 1% 0%;
 }
+.factura{
+	display: block;
+	float: center;
+	margin: 1% 1% 1% 5%;
+}
+
+.menu_factura {
+   position: fixed;
+   top: 45%;
+   right: 0;
+   bottom: 1em;
+   left: 2;
+   background:#645394;
+	width:15%;
+	height: 35%; 
+	margin:1;
+	-moz-transition:all .2s linear;
+	-webkit-transition:all .2s linear; 
+	-o-transition:all .2s linear; 
+	-ms-transition:all .2s linear;
+   
+}
+
 .col_1_of_4:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 .span_1_of_4 {
 	width: 22.8%;
@@ -236,12 +321,18 @@ hr {
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
+	}
+	.menu_factura {
+	width:15%;
 	}	
 }
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
 @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.envolver{
 		width:95%;
+	}
+	.menu_factura {
+	width:15%;
 	}
 	.col_1_of_4{ 
 		margin: 1% 0 1% 0%;
@@ -256,6 +347,11 @@ hr {
 	.envolver{
 		width:95%;
 	}
+	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.col_1_of_4{ 
 		margin: 1% 0 1% 0%;
 	}
@@ -279,7 +375,22 @@ hr.hr {
 	color:#fff;
 	font-size:0.8125em;
 	line-height:1.5em;
+	
 }
+
+.lista_factura{
+	background: #2F292B;
+	padding:20px;
+	text-align:center;
+}
+
+.lista_factura p{
+	color:#fff;
+	font-size:0.8125em;
+	line-height:1.5em;
+	text-align:left;
+}
+
 .contenido-boton{
 	margin-bottom: 5%;
 }
@@ -579,13 +690,21 @@ p.txt2{
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
+	}
+	.menu_factura {
+	width:15%;
 	}	
+	
 }
 /*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
 @media only screen and (max-width: 800px) {
 	.envolver{
 		width:95%;
 	}
+	.menu_factura {
+	width:15%;
+	}
+	
 	.span_2_of_3 {
 		width:94%;
 		padding:3%; 
@@ -603,6 +722,10 @@ p.txt2{
 	.envolver{
 		width:95%;
 	}
+	.menu_factura {
+	width:15%;
+	}
+	
 	.span_2_of_3 {
 		width:94%;
 		padding:3%; 
@@ -624,6 +747,10 @@ p.txt2{
 	.envolver{
 		width:95%;
 	}
+	.menu_factura {
+	width:15%;
+	}
+	
 	.span_2_of_3 {
 		width:90%;
 		padding:5%; 
@@ -652,6 +779,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width: 79%;
 	}
@@ -660,7 +791,11 @@ p.txt2{
 @media (max-width:1280px){
 	.envolver{
 		width:90%;
+	}
+	.menu_factura {
+	width:15%;
 	}	
+	
 	.right-text {
 		width:78%;
 	}
@@ -670,6 +805,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width:73%;
 	}
@@ -683,7 +822,11 @@ p.txt2{
 @media (max-width:800px){
 	.envolver{
 		width:90%;
+	}
+	.menu_factura {
+	width:15%;
 	}	
+	
 	.right-text {
 		width:65%;
 	}
@@ -699,6 +842,11 @@ p.txt2{
 		margin: -88px 0px;
 	}
 	.cssmenu > ul > li > a {
+		font: normal 14px/30px PT Sans, sans-serif;
+		padding: 4px 13px;
+		line-height: 4.8em;
+	}
+	.cssfactura > ul > li > a {
 		font: normal 14px/30px PT Sans, sans-serif;
 		padding: 4px 13px;
 		line-height: 4.8em;
@@ -736,6 +884,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width: 64%;
 	}	
@@ -745,6 +897,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width:65%;
 	}
@@ -760,6 +916,11 @@ p.txt2{
 		margin:-79px -20px;
 	}
 	.cssmenu > ul > li > a {
+		font: normal 14px/30px PT Sans, sans-serif;
+		padding: 4px 13px;
+		line-height: 4.8em;
+	}
+	.cssfactura > ul > li > a {
 		font: normal 14px/30px PT Sans, sans-serif;
 		padding: 4px 13px;
 		line-height: 4.8em;
@@ -823,6 +984,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width:65%;
 	}
@@ -840,6 +1005,11 @@ p.txt2{
 		text-align: center;
 	}
 	.cssmenu > ul > li > a {
+		font: normal 13px/30px PT Sans, sans-serif;
+		padding: 4px 10px;
+		line-height: 4.8em;
+	}
+	.cssfactura > ul > li > a {
 		font: normal 13px/30px PT Sans, sans-serif;
 		padding: 4px 10px;
 		line-height: 4.8em;
@@ -909,6 +1079,10 @@ p.txt2{
 	.envolver{
 		width:90%;
 	}	
+	.menu_factura {
+	width:15%;
+	}
+	
 	.right-text {
 		width:65%;
 	}
@@ -926,6 +1100,11 @@ p.txt2{
 		text-align: center;
 	}
 	.cssmenu > ul > li > a {
+		font: normal 13px/30px PT Sans, sans-serif;
+		padding: 0px 0px;
+		line-height: 2.8em;
+	}
+	.cssfactura > ul > li > a {
 		font: normal 13px/30px PT Sans, sans-serif;
 		padding: 0px 0px;
 		line-height: 2.8em;
@@ -995,7 +1174,13 @@ p.txt2{
 	.cssmenu > ul > li {
 		display: block;
 	}
+	.cssfactura > ul > li {
+		display: block;
+	}
 	.cssmenu {
+		padding: 2px 0;
+	}
+	.cssfactura {
 		padding: 2px 0;
 	}
 	.follow_icon li a img {
