@@ -160,7 +160,7 @@ height:40px;
 .Principal{
 	padding:3% 0;
 }
-/*--content--*/
+/*--contenido--*/
 .caja-superior h2{
 	text-align: center;
 	color: #888;
@@ -190,7 +190,7 @@ hr {
 	width: 65%;
 	margin: 0 auto;
 }
-/*  GRID OF FIVE   ============================================================================= */
+/*  cuadro de 5  ============================================================================= */
 .col_1_of_5{
 	display: block;
 	float: left;
@@ -216,7 +216,7 @@ hr {
 	font-size: 0.8125em;
 	line-height: 1.5em;
 }
-/***** Media Quries *****/
+/***** Para los distintos tipos de resoluciones *****/
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
@@ -226,7 +226,7 @@ hr {
 	}	
 	
 }
-/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+/*  ANCHO COMPLETO A MENOS DE 640 PÍXELES */
  @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.envolver{
 		width:95%;
@@ -244,7 +244,7 @@ hr {
 	}
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/* ANCHO COMPLETO A MENOS DE 480 PÍXELES */
  @media only screen and (max-width: 480px) {
 	.envolver{
 		width:95%;
@@ -267,7 +267,7 @@ hr {
 .content-top{
 	margin-bottom:5%;
 }
-/*  GRID OF FOUR   ============================================================================= */
+/*  CUADRO DE CUATRO   ============================================================================= */
 
 .col_1_of_4{
 	display: block;
@@ -317,7 +317,7 @@ hr {
 .span_1_of_4  h3 a:hover{
 	color:#645394;
 }
-/***** Media Quries *****/
+/***** Para las distintas resoluciones *****/
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
@@ -326,7 +326,7 @@ hr {
 	width:15%;
 	}	
 }
-/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+/*  ANCHO COMPLETO A MENOS DE 640 PÍXELES */
 @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.envolver{
 		width:95%;
@@ -342,7 +342,7 @@ hr {
 		padding:3%;  
 	}
 }
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/* ANCHO COMPLETO A MENOS DE 480 PÍXELES */
 @media only screen and (max-width: 480px) {
 	.envolver{
 		width:95%;
@@ -459,7 +459,7 @@ time {
 	-o-transform: scale(0.99);
 	opacity: 1;
 }
-/*--footer--*/
+/*--pie de página--*/
 .footer {
 	background: #2F292B;
 	text-align:center;
@@ -498,7 +498,7 @@ ul.follow_icon li {
 .copia p a:hover{
 	color:#fff;
 }
-/*--about--*/
+/*--Sobre--*/
 .col:first-child {
 	margin-left: 0;
 }
@@ -610,8 +610,8 @@ p.txt2{
 .more{
 	padding-top:4%;
 }
-/*--contact--*/
-/*  Contact Form  ============================================================================= */
+/*--contacto--*/
+/*  Formulario de contacto  ============================================================================= */
 .col{
 	display: block;
 	float:left;
@@ -686,7 +686,7 @@ p.txt2{
 	border:1px solid #C7C7C7;
 	margin-bottom:15px;
 }
-/***** Media Quries *****/
+/***** Medida de resoluciones *****/
 @media only screen and (max-width: 1024px) {
 	.envolver{
 		width:95%;
@@ -696,7 +696,7 @@ p.txt2{
 	}	
 	
 }
-/*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
+/*  ANCHO COMPLETO A MENOS DE 800 PÍXELES */
 @media only screen and (max-width: 800px) {
 	.envolver{
 		width:95%;
@@ -717,7 +717,7 @@ p.txt2{
 		padding:3%; 
 	}
 }
-/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+/*  ANCHO COMPLETO A MENOS DE 800 PÍXELES */
 @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.envolver{
 		width:95%;
@@ -741,7 +741,7 @@ p.txt2{
 		width:97%;
 	}
 }
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*  ANCHO COMPLETO A MENOS DE 480 PÍXELES */
 
 @media only screen and (max-width: 480px) {
 	.envolver{
@@ -766,14 +766,7 @@ p.txt2{
 		width:92%;
 	}
 }
-/*--404--*/
-.page-not-found h1 {
-	font-size: 15em;
-	color: #F0F0F0;
-	text-align: center;
-}
 
-/*--responsive design--*/
 
 @media (max-width:1366px){
 	.envolver{
